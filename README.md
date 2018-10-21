@@ -1,18 +1,18 @@
-# GitHub Action to report to [packtracker.io](https://packtracker.io)
+## GitHub Action to report webpack stats to [packtracker.io](https://packtracker.io)
 
 This GitHub action will upload your webpack build stats to the packtracker.io service.
 
-## Configuration
+### Configuration
 
-### Secrets
+#### Secrets
 
   - `PT_PROJECT_TOKEN` - your [packtracker.io](https://packtracker.io) project token.
 
-### Environment variables
+#### Environment variables
 
   - `WEBPACK_CONFIG_PATH` - the relative path to your webpack configuration
 
-### Workflow
+#### Workflow
 
 A sample workflow file might look something like this
 
