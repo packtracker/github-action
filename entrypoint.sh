@@ -20,9 +20,5 @@ else
   npm install @packtracker/webpack-plugin@1.0.1
 fi
 
-ls -lah /
-cat /report.js
-
 cp /report.js ./report.js
-
 node ./report.js
