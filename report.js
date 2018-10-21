@@ -13,17 +13,12 @@ const pt_config = {
   prior_commit: event.before
 }
 
-console.log(pt_config)
-console.log('event')
-console.log(event)
-
 config.plugins.push(new PacktrackerPlugin(pt_config))
 
-
-//webpack(config, (err) => {
-//  if (err) {
-//    process.exit(1)
-//  } else {
-//    process.exit(0)
-//  }
-//})
+webpack(config, (err) => {
+  if (err) {
+    process.exit(1)
+  } else {
+    process.exit(0)
+  }
+})
