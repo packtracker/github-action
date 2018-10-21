@@ -6,7 +6,7 @@ const event = require(path(process.env.GITHUB_WORKFLOW, 'event.json'))
 
 const pt_config = {
   upload: true,
-  branch: event.ref.replace('/refs/heads/', '')
+  branch: event.ref.replace('/refs/heads/', ''),
   author: event.head_commnit.author.email,
   message: event.head_commit.message,
   commit: event.head_commit.sha,
