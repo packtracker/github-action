@@ -8,5 +8,5 @@ LABEL "com.github.actions.color"="#363636"
 RUN apt-get update && apt-get install jq -y
 
 COPY ./entrypoint.sh /entrypoint.sh
-COPY ./webpack.js /webpack.js
+COPY ./report.js /report.js
 ENTRYPOINT ["/entrypoint.sh"]
