@@ -14,11 +14,11 @@ const pt_config = {
 }
 
 console.log(pt_config)
+console.log('event')
+console.log(event)
 
 config.plugins.push(new PacktrackerPlugin(pt_config))
 
-console.log('event')
-console.log(event)
 
 //webpack(config, (err) => {
 //  if (err) {
