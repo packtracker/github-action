@@ -1,4 +1,4 @@
-# GitHub Action to report to packtracker.io
+# GitHub Action to report to [packtracker.io](https://packtracker.io)
 
 This GitHub action will upload your webpack build stats to the packtracker.io service.
 
