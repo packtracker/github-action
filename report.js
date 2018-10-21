@@ -1,8 +1,7 @@
-const path = require('path')
 const webpack = require('webpack')
 const PacktrackerPlugin = require('@packtracker/webpack-plugin')
 const config = require(process.env.WEBPACK_CONFIG_PATH)
-const event = require(path.join(process.env.GITHUB_WORKFLOW, 'event.json'))
+const event = require(process.env.GITHUB_EVENT_PATH)
 
 const pt_config = {
   upload: true,
