@@ -1,7 +1,13 @@
+const fs = require('fs')
 const webpack = require('webpack')
 const PacktrackerPlugin = require('@packtracker/webpack-plugin')
-const config = require(process.env.WEBPACK_CONFIG_PATH)
 const event = require(process.env.GITHUB_EVENT_PATH)
+
+
+let config = {}
+if (fs.lstatSync(process.env.WEBPACK_CONFIG_PATH).isFile()) {
+  config = require(process.env.WEBPACK_CONFIG_PATH)
+}
 
 const pt_config = {
   upload: true,
@@ -13,6 +19,7 @@ const pt_config = {
   prior_commit: event.before
 }
 
+config.plugins = config.plugins || []
 config.plugins.push(new PacktrackerPlugin(pt_config))
 
 webpack(config, (err) => {

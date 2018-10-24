@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -eu
-: "${WEBPACK_CONFIG_PATH:?'You must provide the path to your webpack configuration with the WEBPACK_CONFIG environment variable'}"
+
 : "${PT_PROJECT_TOKEN:?'You must set the PT_PROJECT_TOKEN secret'}"
 
 if [ -e yarn.lock ]; then
