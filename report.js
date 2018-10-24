@@ -11,12 +11,13 @@ if (fs.lstatSync(process.env.WEBPACK_CONFIG_PATH).isFile()) {
 
 const pt_config = {
   upload: true,
+  fail_build: true,
   branch: event.ref.replace('refs/heads/', ''),
   author: event.head_commit.author.email,
   message: event.head_commit.message,
   commit: process.env.GITHUB_SHA,
   committed_at: +new Date(event.head_commit.timestamp),
-  prior_commit: event.before
+  prior_commit: event.before,
 }
 
 config.plugins = config.plugins || []
