@@ -23,7 +23,7 @@ workflow "packtracker.io" {
 }
 
 action "Report to packtracker.io" {
-  uses = "packtracker/github-action@1.1.1"
+  uses = "packtracker/github-action@1.1.2"
   secrets = ["PT_PROJECT_TOKEN"]
   env = {
     "WEBPACK_CONFIG_PATH" = "./config/webpack/production.js"
