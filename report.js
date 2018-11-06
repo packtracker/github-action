@@ -16,7 +16,7 @@ const pt_config = {
   author: event.head_commit.author.email,
   message: event.head_commit.message,
   commit: process.env.GITHUB_SHA,
-  committed_at: +new Date(event.head_commit.timestamp),
+  committed_at: parseInt(+new Date(event.head_commit.timestamp) / 1000),
   prior_commit: event.before,
 }
 
