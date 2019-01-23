@@ -1,4 +1,4 @@
-## GitHub Action to report webpack stats to [packtracker.io](https://packtracker.io)
+## GitHub Action to report webpack stats to [packtracker.io](https://packtracker.io/?utm_source=github&utm_medium=action&utm_campaign=links)
 
 This GitHub action will upload your webpack build stats to the packtracker.io service.
 
@@ -6,7 +6,7 @@ This GitHub action will upload your webpack build stats to the packtracker.io se
 
 #### Secrets (Required)
 
-  - `PT_PROJECT_TOKEN` - your [packtracker.io](https://packtracker.io) project token.
+  - `PT_PROJECT_TOKEN` - your [packtracker.io](https://packtracker.io/?utm_source=github&utm_medium=action&utm_campaign=links) project token.
 
 #### Environment variables (Optional)
 
