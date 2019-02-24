@@ -27,6 +27,7 @@ webpack(config, (err) => {
   if (err) {
     process.exit(1)
   } else {
+    console.log(fs.readFileSync(, 'utf8'))
     process.exit(0)
   }
 })
