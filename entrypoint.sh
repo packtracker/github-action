@@ -10,14 +10,14 @@ if [ -e yarn.lock ]; then
     exit 1
   fi
 
-  yarn add @packtracker/webpack-plugin@2.0.0-beta.0
+  yarn add @packtracker/webpack-plugin@2.0.0-beta.1
 else
   if ! npm install; then
     echo "npm install failed" 1>&2
     exit 1
   fi
 
-  npm install @packtracker/webpack-plugin@2.0.0-beta.0
+  npm install @packtracker/webpack-plugin@2.0.0-beta.1
 fi
 
 cp /report.js ./report.js
