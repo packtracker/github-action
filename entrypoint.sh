@@ -10,14 +10,14 @@ if [ -e yarn.lock ]; then
     exit 1
   fi
 
-  yarn add git+https://jondavidjohn@github.com/packtracker/webpack-plugin.git#feature/use-webpack-bundle-analyzer-directly
+  yarn add @packtracker/webpack-plugin@2.0.0-beta.0
 else
   if ! npm install; then
     echo "npm install failed" 1>&2
     exit 1
   fi
 
-  npm install git+https://jondavidjohn@github.com/packtracker/webpack-plugin.git#feature/use-webpack-bundle-analyzer-directly
+  npm install @packtracker/webpack-plugin@2.0.0-beta.0
 fi
 
 cp /report.js ./report.js
