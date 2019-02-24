@@ -22,6 +22,7 @@ const pt_config = {
 
 config.plugins = config.plugins || []
 config.plugins.push(new PacktrackerPlugin(pt_config))
+config.mode = 'production'
 
 webpack(config, (err) => {
   if (err) {
