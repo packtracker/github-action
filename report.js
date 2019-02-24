@@ -27,7 +27,7 @@ webpack(config, (err) => {
   if (err) {
     process.exit(1)
   } else {
-    console.log(fs.readFileSync(, 'utf8'))
+    console.log(fs.readFileSync('/github/workspace/public/packs/manifest-caddb7b89874c545619b.js', 'utf8'))
     process.exit(0)
   }
 })
