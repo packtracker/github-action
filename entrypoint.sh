@@ -22,3 +22,5 @@ fi
 
 cp /report.js ./report.js
 node ./report.js
+
+ls -l /github/workspace/public/packs/
