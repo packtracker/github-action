@@ -5,7 +5,7 @@ LABEL "com.github.actions.description"="Report your webpack build stats to the p
 LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="#363636"
 
-RUN apt-get update && apt-get install jq -y && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install jq git -y && rm -rf /var/lib/apt/lists/*
 
 COPY ./entrypoint.sh /entrypoint.sh
 COPY ./report.js /report.js
