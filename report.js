@@ -1,8 +1,10 @@
+const util = require('util')
 const fs = require('fs')
 const webpack = require('webpack')
 const PacktrackerPlugin = require('@packtracker/webpack-plugin')
 const event = require(process.env.GITHUB_EVENT_PATH)
 
+console.log(util.inspect(event))
 
 let config = {}
 if (fs.lstatSync(process.env.WEBPACK_CONFIG_PATH).isFile()) {
