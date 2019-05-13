@@ -4,7 +4,7 @@ set -eu
 
 : "${PT_PROJECT_TOKEN:?'You must set the PT_PROJECT_TOKEN secret'}"
 
-if [ -v PT_PROJECT_ROOT ]; then
+if [ -n "${PT_PROJECT_ROOT+1}" ]; then
   echo "Custom root directory detected, navigating to: $PT_PROJECT_ROOT"
   cd $PT_PROJECT_ROOT
 fi
