@@ -24,7 +24,8 @@ elif [ -e package.json ]; then
 
   npm install @packtracker/webpack-plugin@2.0.1
 else
-  echo "Could not find package.json file in $(pwd)" 1>&2
+  echo "Could not find package.json within $(pwd)" 1>&2
+  echo 'Try setting a custom root directory with the $PT_PROJECT_TOKEN environment variable to set a custom root path.' 1>&2
   exit 2
 fi
 
