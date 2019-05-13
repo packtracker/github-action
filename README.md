@@ -11,6 +11,7 @@ This GitHub action will upload your webpack build stats to the packtracker.io se
 #### Environment variables (Optional)
 
   - `WEBPACK_CONFIG_PATH` - the relative path to your webpack configuration (if you have one)
+  - `PT_PROJECT_ROOT` - the relative path to the directory of your project (containing your package.json file)
 
 #### Workflow
 
