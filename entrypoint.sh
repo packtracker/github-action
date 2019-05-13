@@ -5,6 +5,7 @@ set -eu
 : "${PT_PROJECT_TOKEN:?'You must set the PT_PROJECT_TOKEN secret'}"
 
 if [ -z "$PT_PROJECT_ROOT" ]; then
+  echo "Custom root directory detected, navigating to: $PT_PROJECT_ROOT"
   cd $PT_PROJECT_ROOT
 fi
 
@@ -23,7 +24,8 @@ elif [ -e package.json ]; then
 
   npm install @packtracker/webpack-plugin@2.0.1
 else
-  echo "Could not find package.json file in $(pwd)"
+  echo "Could not find package.json file in $(pwd)" 1>&2
+  exit 2
 fi
 
 cp /report.js ./report.js
