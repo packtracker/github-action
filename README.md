@@ -28,6 +28,7 @@ action "Report to packtracker.io" {
   secrets = ["PT_PROJECT_TOKEN"]
   env = {
     "WEBPACK_CONFIG_PATH" = "./config/webpack/production.js"
+    "PT_PROJECT_ROOT" = "./path/to/subdirectory"
   }
 }
 ```
