@@ -15,14 +15,14 @@ if [ -e yarn.lock ]; then
     exit 1
   fi
 
-  yarn add @packtracker/webpack-plugin@2.1.0-beta.0
+  yarn add @packtracker/webpack-plugin@2.1.0
 elif [ -e package.json ]; then
   if ! npm install; then
     echo "npm install failed" 1>&2
     exit 1
   fi
 
-  npm install @packtracker/webpack-plugin@2.1.0-beta.0
+  npm install @packtracker/webpack-plugin@2.1.0
 else
   echo "Could not find package.json within $(pwd)" 1>&2
   echo 'Try setting a custom root directory with the $PT_PROJECT_ROOT environment variable to set a custom root path.' 1>&2
