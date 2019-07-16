@@ -1,3 +1,9 @@
+# THIS ACTION IS DEPRECATED
+
+This action has been deprecated as of version 2.1.2.
+
+Please use https://github.com/packtracker/report instead.
+
 ## GitHub Action to report webpack stats to [packtracker.io](https://packtracker.io/?utm_source=github&utm_medium=action&utm_campaign=links)
 
 This GitHub action will upload your webpack build stats to the packtracker.io service.
@@ -24,7 +30,7 @@ workflow "packtracker.io" {
 }
 
 action "Report to packtracker.io" {
-  uses = "packtracker/github-action@2.1.0"
+  uses = "packtracker/github-action@2.1.2"
   secrets = ["PT_PROJECT_TOKEN"]
   env = {
     "WEBPACK_CONFIG_PATH" = "./config/webpack/production.js"
