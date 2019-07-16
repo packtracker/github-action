@@ -38,3 +38,6 @@ if [ -e yarn.lock ]; then
 else
   npm uninstall @packtracker/webpack-plugin
 fi
+
+echo 'THIS GITHUB ACTION HAS BEEN DEPRECATED'
+echo 'Please use https://github.com/packtracker/report instead'
