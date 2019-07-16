@@ -15,14 +15,14 @@ if [ -e yarn.lock ]; then
     exit 1
   fi
 
-  yarn add @packtracker/webpack-plugin@2.1.0
+  yarn add @packtracker/webpack-plugin@2.1.2
 elif [ -e package.json ]; then
   if ! npm install; then
     echo "npm install failed" 1>&2
     exit 1
   fi
 
-  npm install @packtracker/webpack-plugin@2.1.0
+  npm install @packtracker/webpack-plugin@2.1.2
 else
   echo "Could not find package.json within $(pwd)" 1>&2
   echo 'Try setting a custom root directory with the $PT_PROJECT_ROOT environment variable to set a custom root path.' 1>&2
@@ -38,3 +38,6 @@ if [ -e yarn.lock ]; then
 else
   npm uninstall @packtracker/webpack-plugin
 fi
+
+echo 'THIS GITHUB ACTION HAS BEEN DEPRECATED'
+echo 'Please use https://github.com/packtracker/report instead'
