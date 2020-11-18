@@ -1,3 +1,5 @@
+# This GitHub Action is deprecated and no-longer supported, please use our [newest version](https://github.com/packtracker/report).
+
 ## GitHub Action to report webpack stats to [packtracker.io](https://packtracker.io/?utm_source=github&utm_medium=action&utm_campaign=links)
 
 This GitHub action will upload your webpack build stats to the packtracker.io service.
